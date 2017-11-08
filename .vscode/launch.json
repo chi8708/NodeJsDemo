@@ -1,0 +1,54 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "启动",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/fs/basic.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        }, {
+            "name": "附加",
+            "type": "node",
+            "request": "attach",
+            "port": 5858,
+            "address": "localhost",
+            "restart": false,
+            "sourceMaps": false,
+            "outDir": null,
+            "localRoot": "${workspaceRoot}",
+            "remoteRoot": null
+        }
+        /*{
+            "name": "Launch localhost with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:9222/test.html",
+            "webRoot": "${workspaceRoot}/http/",
+            "sourceMaps": true,
+            "runtimeArgs": [
+                "--remote-debugging-port=9222"
+            ],
+            "runtimeExecutable": "C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"
+        }, {
+            "name": "Launch index.html (without sourcemaps)",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceRoot}/http/test.html",
+            "runtimeExecutable": "C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"
+        }*/
+    ]
+}
